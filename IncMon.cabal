@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 176f1a7329e9c10357612b8583c7764471edf004cf8ca440fa69b61e2b180ecd
+-- hash: e422b2995cbd6c92722c6ec2be81357f80b33c4ff6e32c418b171302128bbc3f
 
 name:           IncMon
 version:        0.1.0.0
@@ -30,7 +30,7 @@ library
       IncMon.Date
       IncMon.Document
       IncMon.Incident
-      IncMon.InvolvedStudent
+      IncMon.InvolvedPerson
       IncMon.Organization
       IncMon.Person
       IncMon.PersonHasReport

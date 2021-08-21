@@ -1,9 +1,13 @@
-module IncMon.InvolvedStudent where
+module IncMon.InvolvedPerson where
 
 import IncMon.Incident (Incident)
 import IncMon.Person (Person)
 
-data Department = Pre | G1 | G2 | G3 | G4 | G5 | G6 | G7 | G8 | G9 | G10 | G11 | C1 | C2 deriving (Enum, Bounded, Ord, Eq, Show)
+data Department = Department {
+      departmentId :: Int
+    , departmentName :: String
+} deriving Show
+
 
 data IncidentType = IncidentType {
       incidentTypeId :: Int
