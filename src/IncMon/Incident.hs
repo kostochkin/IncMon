@@ -1,17 +1,20 @@
 module IncMon.Incident where
 
 import IncMon.Date (Date)
-import IncMon.School (School)
+import IncMon.Organization (Organization)
 
 
-data Source = SourceSchool | Police | Family | Classmates | KDN | Guardianship deriving (Enum, Bounded, Show)
+data Source = Source {
+      sourceId :: Int
+    , sourceName :: String
+    } deriving Show
 
 data Incident = Incident {
       id :: Int
     , incidentDate :: Date
     , relatedIncident :: Maybe Incident
-    , school :: Either Int School
+    , organization :: Either Int Organization
     , source :: Source
-    }
+    } deriving Show
 
 

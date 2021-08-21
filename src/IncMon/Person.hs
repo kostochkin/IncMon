@@ -1,15 +1,15 @@
-module IncMon.Child where
+module IncMon.Person where
 
 import IncMon.Date (Date)
 
 data Sex = F | M deriving (Enum, Show)
 
-data Child = Child {
+data Person = Person {
       id :: Int
     , firstname :: String
     , lastname :: String
     , patronymic :: String
-    , sexId :: Sex
+    , sex :: Sex
     , birthdate :: Date
-    }
+    } deriving Show
     
